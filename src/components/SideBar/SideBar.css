@@ -1,0 +1,29 @@
+.sidebar {
+  width: 300px;
+  background-color: #202020;
+}
+.sidebar__buttons {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.sidebar__btn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.sidebar__btn:hover {
+  background-color: grey;
+}
+
+.sidebar__icon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.sidebar__extrawidth {
+  width: 70px;
+}

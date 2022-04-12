@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Router, Routes } from "react-router-dom";
+import "./App.css";
+import Channel from "./components/Channel/Channel";
+import ChannelAllVideos from "./components/ChannelVideo/ChannelAllVideos";
+import ChannelVideo from "./components/ChannelVideo/ChannelVideo";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import SideBar from "./components/SideBar/SideBar";
+import Watch from "./components/Watch/Watch";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="app__main">
+        <SideBar hide />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="watch" element={<Watch />} />
+          <Route path="channel" element={<Channel />}>
+            <Route index element={<ChannelVideo />} />
+            <Route path="allvideo" element={<ChannelAllVideos />} />
+          </Route>
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,24 @@
+.watch__suggestionInfo > p {
+  font-weight: 500;
+  font-size: small;
+  color: gray;
+}
+
+.watch__suggestionContainer {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.watch__suggestionInfo {
+  margin-left: 10px;
+}
+
+.watch__suggestionThumbnail {
+  width: 150px;
+  height: 80px;
+}
+
+.suggestion {
+  cursor: pointer;
+}

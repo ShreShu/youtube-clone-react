@@ -1,0 +1,64 @@
+.channel {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.channel__banner {
+  height: 20vh;
+  width: 100vw;
+}
+
+.channel__banner > img {
+  height: 100%;
+  width: 100%;
+}
+
+.channel__Info {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.creater__account {
+  display: flex;
+}
+
+.creater__subscribe > button {
+  margin-right: 120px;
+}
+
+.channel_Creater {
+  margin-left: 10px;
+}
+
+.channel ::-webkit-scrollbar {
+  display: none;
+}
+.channel__Links {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.channel__Links > a {
+  margin-left: 8px;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium;
+}
+
+.channel__routes {
+  width: 70vw;
+  margin-left: 20px;
+}
+
+.channel__routerOutlet {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 140px;
+  margin-top: 20px;
+}
